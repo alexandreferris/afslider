@@ -9,6 +9,11 @@
 	<script type="text/javascript" src="/js/slide.js"></script>
 </head>
 <body>
+	<style>
+		#slide {
+			background-color: #009900;
+		}
+	</style>
 	<h1>Slide Plugin</h1>
 
 	<div id="slide">testando</div>
