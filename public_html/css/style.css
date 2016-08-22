@@ -1,0 +1,32 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+.logo {
+	width: 220px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#slide .item img {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide .item span {
+	width: 80vw;
+	max-width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	position: absolute;
+	z-index: 1;
+	font-size: 40px;
+	text-align: center;
+	white-space:normal;
+	color: white;
+}
