@@ -8,7 +8,6 @@ body {
 .logo {
 	width: 220px;
 	height: 40px;
-	margin-left: 20px;
 	margin-top: 20px;
 }
 #slide .item img {
@@ -29,4 +28,25 @@ body {
 	text-align: center;
 	white-space:normal;
 	color: white;
+}
+
+#btnprev {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	cursor: pointer;
+	background-image: url('../img/back.png');
+}
+#btnnext {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	left: 100%;
+	margin-left: -32px;
+	cursor: pointer;
+	background-image: url('../img/next.png');
 }

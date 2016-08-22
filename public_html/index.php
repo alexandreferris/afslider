@@ -25,6 +25,9 @@
 
 	<div style="width: 100vw;height:100vh;float:left;text-align:center;">
 		<img src="img/logo.png" class="logo" />
+
+		<div id="btnprev"></div>
+		<div id="btnnext"></div>
 	</div>
 
 	<h1>Slide Plugin</h1>
@@ -32,7 +35,14 @@
 
 	<script type="text/javascript">
 		$("#slide").afslider({
-			interval: '3000'
+			interval: '5000',
+			speedFadeIn: 2000,
+			speedFadeOut: 2000,
+			/*dots: true,*/
+			autoplay: true,
+			buttons: true,
+			btnprev: 'btnprev',
+			btnnext: 'btnnext'
 		});
 	</script>
 </body>

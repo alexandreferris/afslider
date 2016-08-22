@@ -37,6 +37,34 @@ Built in: 2016
 		/* Hidding Slides */
 		$(this).children('div.item').not(":first-child").hide();
 
+		/* buttons */
+		if(options.buttons) {
+			/* Previous button */
+			$("#"+options.btnprev).click(function() {
+				currentIndex -= 1;
+				if(currentIndex < 0) {
+					currentIndex = slideAmount - 1;
+				}
+				console.log(currentIndex);
+				/* get next slide */
+				var nextSlide = slideItems.eq(currentIndex);
+				slideItems.fadeOut(options.speedFadeOut);
+				nextSlide.fadeIn(options.speedFadeOut);
+			});
+
+			/* Next button */
+			$("#"+options.btnnext).click(function() {
+				currentIndex += 1;
+				if(currentIndex > (slideAmount - 1)) {
+					currentIndex = 0;
+				}
+				/* get next slide */
+				var nextSlide = slideItems.eq(currentIndex);
+				slideItems.fadeOut(options.speedFadeOut);
+				nextSlide.fadeIn(options.speedFadeOut);
+			});
+		}
+
 		/* if autoplay enabled start moving slides */
 		if(options.autoplay) {
 			/* setInterval for loop */
@@ -48,8 +76,8 @@ Built in: 2016
 
 				/* get next slide */
 				var nextSlide = slideItems.eq(currentIndex);
-				slideItems.fadeOut(2000);
-				nextSlide.fadeIn(2000);
+				slideItems.fadeOut(options.speedFadeOut);
+				nextSlide.fadeIn(options.speedFadeOut);
 			}, options.interval);
 		}
 	};
@@ -62,6 +90,12 @@ Built in: 2016
 		height: '100vh',		/* 100vh or set height */
 		zindex: '-1',
 		autoplay: true,			/* True of False */
-		interval: '1000'			/* Interval between each slide */
+		interval: '1000',		/* Interval between each slide */
+		speedFadeIn: 1500,		/* fadeIn in milliseconds */
+		speedFadeOut: 1500,		/* fadeOut in milliseconds */
+		dots: false,
+		buttons: false,
+		btnprev: false,			/* ID of button previous element (e.g. btn_prev) */
+		btnnext: false 			/* ID of button next element (e.g. btn_next) */
 	}
 }( jQuery ));
