@@ -12,7 +12,8 @@ E-mail: contato@rivott.com.br
 		this.css({
 			'position': options.position,
 			'width': options.width,
-			'height': options.height
+			'height': options.height,
+			'z-index': options.zindex
 		});
 
 		if(options.position == 'absolute') {
@@ -21,6 +22,17 @@ E-mail: contato@rivott.com.br
 				'left': '0px'
 			});
 		}
+
+		/* Chaging inner text positioning */
+		$(this).children('div.item').children('span').each(function(i) {
+			$(this).css({
+				'top': '50%',
+				'margin-top': '-'+($(this).height() / 2)
+			})
+		});
+
+		/* Hidding Slides */
+		$(this).children('div.item').not(":first-child").hide();
 	};
 	
 	$.fn.afslider.defaults = {
@@ -34,6 +46,5 @@ E-mail: contato@rivott.com.br
 		height: '100vh',		/* 100vh or set height */
 		zindex: '-1',
 		autoplay: true			/* True of False */
-		
 	}
 }( jQuery ));
