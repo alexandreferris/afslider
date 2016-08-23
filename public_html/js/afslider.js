@@ -1,6 +1,7 @@
 /*************************************
+	AFSlider - A jQuery Slide Plugin
 Author: Alexandre Ferris
-E-mail: contato@rivott.com.br
+E-mail: ferris.alexandre@gmail.com
 Website: http://rivott.com.br
 Built in: 2016
 *************************************/
@@ -127,13 +128,12 @@ Built in: 2016
 	
 	/* Default variables */
 	$.fn.afslider.defaults = {
-		responsive: true,		/* True or False */
 		position: 'absolute',		/* static, relative, fixed, absolute */
 		width: '100vw',			/* 100vw or set width */
 		height: '100vh',		/* 100vh or set height */
 		zindex: '-1',
 		centertext: false,
-		autoplay: true,			/* True of False */
+		autoplay: false,			/* True of False */
 		interval: '1000',		/* Interval between each slide */
 		speedFadeIn: 1500,		/* fadeIn in milliseconds */
 		speedFadeOut: 1500,		/* fadeOut in milliseconds */

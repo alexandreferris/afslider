@@ -5,11 +5,11 @@
 	<title>AFSlider - A jQuery Slide Plugin</title>
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/afslider.css" />
 
 	<!-- JS / jQuery -->
 	<script type="text/javascript" src="/js/jquery-2.2.4.js"></script>
-	<script type="text/javascript" src="/js/slide.js"></script>
+	<script type="text/javascript" src="/js/afslider.js"></script>
 </head>
 <body>
 	<div id="slide">
