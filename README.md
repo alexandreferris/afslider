@@ -85,7 +85,7 @@ $("#slide").afslider({
 
 
 
-
+<br><br><br><br><br>
 
 Author: Alexandre Ferris<br>
 E-mail: ferris.alexandre@gmail.com<br>
