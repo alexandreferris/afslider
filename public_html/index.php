@@ -14,20 +14,23 @@
 <body>
 	<div id="slide">
 		<div class="item">
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan lectus a congue facilisis.</span>
+			<span>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan lectus a congue facilisis.</span>
 			<img src="img/img1.jpg" />
 		</div>
 		<div class="item">
-			<span>Texto Especial 2</span>
+			<span>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan lectus a congue facilisis.</span>
 			<img src="img/img2.jpg" />
+		</div>
+		<div class="item">
+			<span>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan lectus a congue facilisis.</span>
+			<img src="img/img3.jpg" />
 		</div>
 	</div>
 
 	<div style="width: 100vw;height:100vh;float:left;text-align:center;">
-		<img src="img/logo.png" class="logo" />
-
 		<div id="btnprev"></div>
 		<div id="btnnext"></div>
+		<div id="dots"></div>
 	</div>
 
 	<h1>Slide Plugin</h1>
@@ -36,10 +39,10 @@
 	<script type="text/javascript">
 		$("#slide").afslider({
 			interval: '5000',
-			speedFadeIn: 2000,
-			speedFadeOut: 2000,
-			/*dots: true,*/
+			dots: true,
+			dotsid: 'dots',
 			autoplay: true,
+			centertext: true,
 			buttons: true,
 			btnprev: 'btnprev',
 			btnnext: 'btnnext'

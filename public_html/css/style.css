@@ -5,11 +5,6 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 }
-.logo {
-	width: 220px;
-	height: 40px;
-	margin-top: 20px;
-}
 #slide .item img {
 	width: 100vw;
 	height: 100vh;
@@ -49,4 +44,23 @@ body {
 	margin-left: -32px;
 	cursor: pointer;
 	background-image: url('../img/next.png');
+}
+
+#dots ul {
+	list-style-type: none;
+	position: relative;
+	float: left;
+}
+
+#dots ul li {
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #478132;
+	margin-left: 5px;
+	cursor: pointer;
+}
+#dots ul li.active {
+	background-color: #8add6d;
 }
