@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Slide Plugin</title>
+	<title>AFSlider - A jQuery Slide Plugin</title>
 	
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -32,9 +32,6 @@
 		<div id="btnnext"></div>
 		<div id="dots"></div>
 	</div>
-
-	<h1>Slide Plugin</h1>
-	
 
 	<script type="text/javascript">
 		$("#slide").afslider({
