@@ -20,7 +20,7 @@ You can change the name of **public_html** to your specific webserver folder nam
 
 ### Include the JS file into your new html file.
 ```html
-  <script type="text/javascript" src="/afslider.js"></script>
+  <script type="text/javascript" src="afslider.js"></script>
 ```
 
 ### Include the CSS file into your new html file.
