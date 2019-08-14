@@ -89,5 +89,4 @@ $("#slide").afslider({
 
 Author: Alexandre Ferris<br>
 E-mail: ferris.alexandre@gmail.com<br>
-Website: http://rivott.com.br<br>
 Built in: 2016
