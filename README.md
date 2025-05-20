@@ -38,14 +38,14 @@ You can change the name of **public_html** to your specific webserver folder nam
 ### Create some slides with texts ( optional )
 ```html
   <div id="slide">
-		<div class="item">
-			<span>Some random text</span>
-			<img src="image1.jpg" />
-		</div>
-		<div class="item">
-			<span>Some random text 2</span>
-			<img src="image2.jpg" />
-		</div>
+	<div class="item">
+		<span>Some random text</span>
+		<img src="image1.jpg" />
+	</div>
+	<div class="item">
+		<span>Some random text 2</span>
+		<img src="image2.jpg" />
+	</div>
   </div>
 ```
 
